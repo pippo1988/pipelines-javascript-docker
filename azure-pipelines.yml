@@ -14,6 +14,7 @@ steps:
 - task: KubernetesManifest@0
   displayName: deploy app to dev cluster
   inputs:
+   action: deploy
    kubernetesServiceConnection: dev
    namespace: default
    manifest: test/deployment.yml
