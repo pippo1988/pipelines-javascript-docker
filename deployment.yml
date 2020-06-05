@@ -12,3 +12,16 @@ spec:
       containers:
         - name: test 
           image: pippo1988/test:test
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: test
+  name: test
+spec:
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: test
