@@ -4,4 +4,11 @@ steps:
   inputs:
     command: login
     containerRegistry: dockerhub
+- task: Docker@2
+  displayName: Build AND Push
+  inputs:
+   command: buildAndPush
+   repository: test
+   tags: |
+     test
 
