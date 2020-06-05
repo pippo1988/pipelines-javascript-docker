@@ -17,6 +17,6 @@ steps:
    action: deploy
    kubernetesServiceConnection: dev
    namespace: default
-   manifest: test/deployment.yml
+   manifest: deployment.yml
    
 
