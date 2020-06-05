@@ -11,4 +11,10 @@ steps:
    repository: pippo1988/test
    tags: |
      test
+- task: KubernetesManifest@0
+  displayName: deploy app to dev cluster
+  inputs:
+   kubernetesServiceConnection: dev
+   manifest: deployment.yml
+   
 
