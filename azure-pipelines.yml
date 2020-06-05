@@ -15,6 +15,6 @@ steps:
   displayName: deploy app to dev cluster
   inputs:
    kubernetesServiceConnection: dev
-   manifest: deployment.yml
+   manifest: test/deployment.yml
    
 
