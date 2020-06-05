@@ -8,7 +8,7 @@ steps:
   displayName: Build AND Push
   inputs:
    command: buildAndPush
-   repository: test
+   repository: pippo1988/test
    tags: |
      test
 
