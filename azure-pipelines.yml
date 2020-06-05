@@ -11,7 +11,7 @@ steps:
    repository: pippo1988/test
    tags: |
      test
-- task: KubernetesManifest@0
+- task: KubectlInstaller@0
   displayName: deploy app to dev cluster
   inputs:
    action: deploy
