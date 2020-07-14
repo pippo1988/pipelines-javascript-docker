@@ -10,7 +10,7 @@ steps:
    command: buildAndPush
    repository: test
    tags: |
-     test
+     latest
 - task: Kubernetes@1
   displayName: kubectl apply
   inputs:
