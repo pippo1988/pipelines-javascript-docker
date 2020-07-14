@@ -15,7 +15,7 @@ steps:
   displayName: kubectl apply
   inputs:
    connectionType: Kubernetes Service Connection
-   kubernetesServiceEndpoint: dev
+   kubernetesServiceEndpoint: orion-aks
    kubernetesCluster: https://orion-aks-5965a859.hcp.chinanorth2.cx.prod.service.azk8s.cn
    namespace: default
    command: apply
