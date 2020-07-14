@@ -1,4 +1,4 @@
-apiVersion : apps/v1beta1
+apiVersion : apps/v1
 kind: Deployment
 metadata:
   name: test 
@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: test 
-          image: pippo1988/test:test
+          image: orion.azurecr.cn/test
 ---
 apiVersion: v1
 kind: Service
