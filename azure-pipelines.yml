@@ -3,12 +3,12 @@ steps:
   displayName: Login to docker-hub
   inputs:
     command: login
-    containerRegistry: dockerhub
+    containerRegistry: orion-acr
 - task: Docker@2
   displayName: Build AND Push
   inputs:
    command: buildAndPush
-   repository: pippo1988/test
+   repository: test
    tags: |
      test
 - task: Kubernetes@1
@@ -16,7 +16,7 @@ steps:
   inputs:
    connectionType: Kubernetes Service Connection
    kubernetesServiceEndpoint: dev
-   kubernetesCluster: https://40.73.33.228:8080/r/projects/1a7/kubernetes:6443
+   kubernetesCluster: https://orion-aks-5965a859.hcp.chinanorth2.cx.prod.service.azk8s.cn
    namespace: default
    command: apply
    arguments: -f deployment.yml
